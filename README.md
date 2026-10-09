@@ -1,4 +1,3 @@
-# Grocery-Warehouse
 # Grocery Self-Checkout & Restocking System
 
 A terminal app that simulates a grocery store's self-checkout kiosks and van restocking. Stock is saved in a CSV file, so it is remembered between runs.
@@ -21,7 +20,7 @@ A terminal app that simulates a grocery store's self-checkout kiosks and van res
 
 ## Run it
 
-Needs Python 3.6 or newer. Keep `main.py`, `logic.py` and `inventory.csv` in the same folder.
+Needs Python 3.6 or newer. Keep `main.py`, `logic1.py`, `logic2.py` and `inventory.csv` in the same folder.
 
 ```bash
 python main.py
@@ -44,7 +43,8 @@ To see the queue, use option 1 for five different customers. The fifth will wait
 | File | Purpose |
 |---|---|
 | `main.py` | Starts the program and runs the menu |
-| `logic.py` | All the checkout, restock and file logic |
+| `logic1.py` | Rules and calculations: checkout, restock, tiers, discounts, printing |
+| `logic2.py` | Data structures: inventory, customers, kiosks, queue, cart, and CSV saving/loading |
 | `test_logic.py` | Unit tests |
 | `inventory.csv` | Stock data |
 | `customers.csv` | Visit history (created automatically) |
